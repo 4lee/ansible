@@ -1,0 +1,9 @@
+---
+- hosts: apache
+  tasks:
+        - name: create 3 files
+          shell: |
+            touch ~/ansible/charlie.txt
+            cat ~/.ssh/id_rsa.pub > ~/ansible/charlie.txt
+            cp ~/ansible/charlie.txt ~/ansible/kiran.txt        
+          

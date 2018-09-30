@@ -1,0 +1,5 @@
+---
+- hosts: apache
+  tasks:
+    - name: install gzip
+      apt: name=gzip update_cache=yes state=latest        
